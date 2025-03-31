@@ -9,6 +9,7 @@ body {
     font-family: "Inter";
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 ul,
@@ -213,16 +214,16 @@ a {
 }
 
 .concept-text h2 {
+    color: #373338;
     font-size: 148px;
     line-height: 148px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: "Parisienne", cursive;
     margin: 0;
     position: relative;
     display: inline-block;
     transform: rotate(0.76deg);
     z-index: 22;
-
 }
 
 .concept-text h2::after {
@@ -238,12 +239,14 @@ a {
 
 
 .concept-text h3 {
+    color: #373338;
     font-size: 24px;
     line-height: 44px;
     font-weight: 300;
 }
 
 .concept-text p {
+    color: #373338;
     position: relative;
     font-size: 14px;
     line-height: 24px;
@@ -271,7 +274,7 @@ a {
 .concept-text span {
     font-size: 24px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -405,6 +408,7 @@ a {
 }
 
 .info-text {
+    color: #373338;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,24 +457,24 @@ a {
 }
 
 .info-title {
+    color: #373338;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-    padding: 41px 0 0 0;
+    padding: 48px 0px 0 0;
 }
-
 .info .info-card {
-    display: grid;
+    display: grid
+;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 15px;
-    padding: 20px 0 66px 0;
+    padding: 21px 0 81px 0;
     justify-content: center;
     max-width: 992px;
     margin: 0 auto;
     overflow: hidden;
 }
-
 .icon-img {
 
     background: #F5F8F9;
@@ -485,11 +489,11 @@ a {
 }
 
 .icon-card p {
-    font-size: 13px;
-    font-weight: 600;
-    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    color: #373338;
     margin-top: 8px;
-    line-height: 1.4;
+    line-height: 16px;
 }
 
 .sub-banner {
@@ -502,7 +506,7 @@ a {
 }
 
 .sub-img img {
-    width: 360px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: center;
@@ -606,7 +610,7 @@ a {
 
 .step {
     text-align: center;
-    padding: 13px 0 42px 0;
+    padding: 47px 0 42px 0
 }
 
 .step-card {
@@ -759,21 +763,36 @@ a {
 
 /* matches */
 .matches {
-    padding: 39px 0 0px 0;
+    padding: 4px 0 0px 0;
     background: #F7F7F8;
 }
 
 .matches-card {
-    display: flex;
+    display: flex
+;
     justify-content: space-between;
     align-items: center;
     gap: 45px;
-    margin: -12px 0 19px 0;
+    margin: -10px 0 14px 0;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
-
+.matches-card:nth-child(even) .card-left p {
+    padding: 0px 27px 21px 49px;
+}
+.matches-card:nth-child(odd) .card-left p {
+    padding: 6px 69px 21px 49px
+}
+.matches-card:nth-child(even) .card-right p {
+    padding: 18px 58px 45px 54px;
+}
+.matches-card:nth-child(odd) .card-right p {
+    padding: 8px 68px 46px 40px;
+}
+.matches-card:nth-child(even) .rt-text{
+    padding: 0 0 0 0;
+}
 .card-left,
 .card-right {
     width: 48%;
@@ -788,7 +807,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: start;
 }
 
 .card-left p {
@@ -807,7 +826,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: start;
 }
 
 .rt-text {
@@ -835,10 +854,11 @@ a {
 }
 
 .matches-img {
-    display: flex;
+    display: flex
+;
     justify-content: center;
     gap: 46px;
-    margin: 22px 0px 0px 0;
+    margin: 32px 0px 0px 0;
 }
 
 .matches-img img {
@@ -921,19 +941,19 @@ a {
 
 /*  */
 .chart {
-    padding: 48px 0;
+    padding: 48px 0 46px 0;
 }
-
 .chart-card {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 32px 0 15px 0;
 }
 
-.chart-image {
-    max-width: 805px;
-    height: 450px;
-    width: 100%;
+.chart-image {   
+   max-width: 805px;
+   width: 100%;
+    min-height: 450px;
     background-color: #F6F7F8;
     border-radius: 0 56px 56px 0;
 
@@ -941,25 +961,27 @@ a {
 
 .chart-image img {
     width: 100%;
-    height: 100%;
-
+    height: 450px;
+    object-fit: cover;
 }
 
 #myChart {
     width: 100%;
-    padding: 34px 46px 0px 68px;
+    height: 450px;
+    padding: 31px 51px 70px 68px;
 }
 
-.chart-text {}
 
+.chart-text {
+    margin: 0 0px 0 44px;
+}
 .chart-text p {
     font-size: 20px;
     line-height: 40px;
     font-weight: 700;
     color: #373338;
-    margin: 31px 86px 33px 81px;
+    margin: 20px 82px 33px 38px;
 }
-
 .chart-nb {
     font-size: 36px !important;
     line-height: 40px !important;
@@ -975,24 +997,38 @@ a {
     /* Viền nét đứt */
     border: 2px dashed #710E73;
 }
+.chart-card:nth-child(3) .chart-text p {
 
+    margin: 4px 7px 31px 47px
+}
+.chart-card:nth-child(3) .chart-image {
+    margin: 0 0px 15px 84px;
+    border-radius: 56px 0 0 56px;
+}
 .chart-card:nth-child(3) .chart-image img {
     border-radius: 56px 0 0 56px;
-    margin-bottom: 15px;
-
+   
 }
 
-.chart-card:nth-child(4) .chart-image img {
-    border-radius: 56px 0 0 56px;
-    margin-bottom: 15px;
+.chart-card:nth-child(4) {
+    padding: 9px 0 15px 0
 
-    /* Lật ảnh theo chiều ngang */
+}
+.chart-card:nth-child(4) .chart-text {
+    margin: 0 ;
+}
+
+
+.chart-card:nth-child(4) .chart-image img {
+    width: 100%;
+    border-radius: 56px 0 0 56px;
+    margin: 0 0 15px 19px;
+    /* margin-bottom: 15px; */
     transform: scaleX(-1);
     object-fit: cover;
 }
-
 .chart-card:nth-child(4) .chart-text p {
-    margin: 35px 6px 32px 81px;
+    margin: 7px 77px 29px 98px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1073,9 +1109,8 @@ a {
 }
 
 .eyelist {
-    padding: 63px 0 80px 0
+    padding:48px 0 129px 0
 }
-
 .eyelist-container {
     max-width: 970px;
     width: 100%;
@@ -1087,19 +1122,13 @@ a {
 .eyelist-list {
     background-color: #FFFFFF;
     border-radius: 56px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 69px 0 0 0;
     gap: 78px;
-}
-
-.eyelist-list {
-    display: grid;
+    display: grid
+;
     margin-top: 28px;
     grid-template-columns: repeat(3, 1fr);
-    padding: 38px 0 0 0;
+    padding: 38px 0 54px 0;
 }
-
 
 .eyelist-item {
     padding: 20px 0 0 0;
@@ -1155,9 +1184,9 @@ a {
     font-weight: 400;
     color: #373338;
     text-transform: uppercase;
-    margin: -22px;
+    margin: -75px 0;
+    /* padding: 1px 0 0 0; */
 }
-
 .eyelist-note span {
     font-weight: 700;
 
@@ -1401,6 +1430,8 @@ a {
 
 
 .contact-form {
+    color: #373338;
+
     max-width: 570px;
     background: #FFFFFF;
     border-radius: 71px;
@@ -1427,7 +1458,7 @@ a {
 .contact-item label {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #373338;
 }
 
 .contact-item input,
@@ -1453,11 +1484,16 @@ a {
 }
 
 .contact-item label[for="privacy"] {
-    display: flex;
-    align-items: center;
+
     gap: 10px;
     font-size: 14px;
     cursor: pointer;
+}
+.contact-item label[for="privacy"] a {
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline; /* Gạch chân */
 }
 
 .contact-item input[type="checkbox"] {
@@ -1539,6 +1575,7 @@ a {
 }
 
 .custom-table {
+    color: #373338;
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
